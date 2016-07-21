@@ -1,0 +1,43 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /*background-color: #eee;*/
+}
+
+.form-code {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-code  {
+  margin-bottom: 10px;
+}
+.form-code .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.form-code .form-control:focus {
+  z-index: 2;
+}
+.form-code input[type="text"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+section {
+  display: none;
+}
+
+.form-code > #error {
+  display: none;
+}

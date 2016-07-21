@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title><%= title %></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel='stylesheet' href='/stylesheets/custom.css' />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <section id="home">
+              <div class="form-code">
+                <p>Saisissez le code à 6 caractères présent sur le verso de la carte</p>
+                <div class="alert alert-danger" role="alert" id="error">Le code n'existe pas !</div>
+                <label for="inputCode" class="sr-only">Code</label>
+                <input type="code" id="inputCode" class="form-control input-lg" placeholder="6H39D2" required="" autofocus="" maxlength="6">
+                <button class="btn btn-lg btn-primary btn-block" id="submit" type="submit">Vérifier</button>
+              </div>
+      </section>
+
+      <section id="choice">
+              <div class="row">
+                <div class="col-md-12"><p class="text-center">Il y a une réduction pour cette carte, souhaitez vous l'utiliser ?</p></div>
+                <div class="col-md-6 text-right"><button type="button" class="btn btn-success btn-lg" id="choice_use_code">Utiliser</button></div>
+                <div class="col-md-6 text-left"><button type="button" class="btn btn-danger btn-lg" id="choice_cancel">Annuler</button></div>
+              </div>
+      </section>
+
+      <section id="using">
+              <form class="form-code">
+                <div class="alert alert-info" role="alert">Le code est dorénavant utilisé.</div>
+                <button class="btn btn-lg btn-primary btn-block" id="using_cancel">Retour</button>
+              </form>
+      </section>
+
+      <section id="used">
+              <form class="form-code">
+                <div class="alert alert-danger" role="alert">La réduction de la carte a déjà été utilisée.</div>
+                <button class="btn btn-lg btn-primary btn-block" id="used_cancel">Retour</button>
+              </form>
+
+      </section>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/custom.js"></script>
+  </body>
+</html>
